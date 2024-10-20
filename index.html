@@ -1,76 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login page | Akash </title>
+    <title>Login and Register Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="wrapper" id="login-container">
-        <h1>Login</h1>
-        <form action="/login" method="post">
-            <div class="input-box">
-                <input type="text" name="username" placeholder="Username" required>
-                <i class="fas fa-user"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" name="password" placeholder="Password" required>
-                <i class="fas fa-lock"></i>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox"> Remember me</label>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-        </form>
-        <p class="register-link">or</p>
-        <div class="social-buttons">
-            <a href="#" class="social-btn google"><img src="google-logo.png" alt="Google"></a>
-            <a href="#" class="social-btn facebook"><img src="facebook-logo.png" alt="Facebook"></a>
-            <a href="#" class="social-btn github"><img src="github-logo.png" alt="GitHub"></a>
+
+<div class="wrapper" id="login-container">
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <div class="input-box">
+            <input type="text" name="username" placeholder="Username" required>
+            <i class="fas fa-user"></i> 
         </div>
-        <p class="register-link">Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
-    </div>
-
-    <div class="wrapper" id="register-container" style="display: none;">
-        <h1>Register</h1>
-        <form action="/register" method="post">
-            <div class="input-box">
-                <input type="text" name="username" placeholder="Username" required>
-                <i class="fas fa-user"></i>
-            </div>
-            <div class="input-box">
-                <input type="email" name="email" placeholder="Email" required>
-                <i class="fas fa-envelope"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" name="password" placeholder="Password" required>
-                <i class="fas fa-lock"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-                <i class="fas fa-lock"></i>
-            </div>
-            <button type="submit" class="btn">Register</button>
-        </form>
-        <p class="register-link">or</p>
-        <div class="social-buttons">
-            <a href="#" class="social-btn google"><img src="google-logo.png" alt="Google"></a>
-            <a href="#" class="social-btn facebook"><img src="facebook-logo.png" alt="Facebook"></a>
-            <a href="#" class="social-btn github"><img src="github-logo.png" alt="GitHub"></a>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Password" required>
+            <i class="fas fa-lock"></i> 
         </div>
-        <p class="register-link">Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        <div class="remember-forgot">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="button type1 btn-txt">Login</button>
+        <div class="loader__balls">
+            <div class="loader__balls__group">
+                <div class="ball item1"></div>
+                <div class="ball item1"></div>
+                <div class="ball item1"></div>
+            </div>
+            <div class="loader__balls__group">
+                <div class="ball item2"></div>
+                <div class="ball item2"></div>
+                <div class="ball item2"></div>
+            </div>
+            <div class="loader__balls__group">
+                <div class="ball item3"></div>
+                <div class="ball item3"></div>
+                <div class="ball item3"></div>
+            </div>
+        </div>
+    </form>
+    <p class="register-link">or</p>
+    <div class="social-buttons">
+        <a href="#" class="social-btn google"><img src="google-logo.png" alt="Google"></a>
+        <a href="#" class="social-btn facebook"><img src="facebook-logo.png" alt="Facebook"></a>
+        <a href="#" class="social-btn github"><img src="github-logo.png" alt="GitHub"></a>
     </div>
+    <p class="register-link">Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a></p>
+</div>
 
-    <script>
-        function showRegisterForm() {
-            document.getElementById('login-container').style.display = 'none';
-            document.getElementById('register-container').style.display = 'block';
-        }
+<div class="wrapper" id="register-container" style="display: none;">
+    <h1>Register</h1>
+    <form action="Register" method="post">
+        <div class="input-box">
+            <input type="text" name="username" placeholder="Username" required>
+            <i class="fas fa-user"></i> 
+        </div>
+        <div class="input-box">
+            <input type="text" name="email" placeholder="Email Id" required>
+            <i class="fas fa-lock"></i> 
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Password" required>
+            <i class="fas fa-lock"></i> 
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" placeholder="Confirm Password" required>
+            <i class="fas fa-lock"></i> 
+        </div>
+        <button type="submit" class="button type1 btn-txt">Register</button>
+        <div class="loader__balls">
+            <div class="loader__balls__group">
+                <div class="ball item1"></div>
+                <div class="ball item1"></div>
+                <div class="ball item1"></div>
+            </div>
+            <div class="loader__balls__group">
+                <div class="ball item2"></div>
+                <div class="ball item2"></div>
+                <div class="ball item2"></div>
+            </div>
+            <div class="loader__balls__group">
+                <div class="ball item3"></div>
+                <div class="ball item3"></div>
+                <div class="ball item3"></div>
+            </div>
+        </div>
+    </form>
+    <p class="register-link">or</p>
+    <div class="social-buttons">
+        <a href="#" class="social-btn google"><img src="google-logo.png" alt="Google"></a>
+        <a href="#" class="social-btn facebook"><img src="facebook-logo.png" alt="Facebook"></a>
+        <a href="#" class="social-btn github"><img src="github-logo.png" alt="GitHub"></a>
+    </div>
+    <p class="register-link">Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+</div>
 
-        function showLoginForm() {
-            document.getElementById('register-container').style.display = 'none';
-            document.getElementById('login-container').style.display = 'block';
-        }
-    </script>
+<script>
+
+    function showRegisterForm() {
+        document.getElementById('login-container').style.display = 'none';
+        document.getElementById('register-container').style.display = 'block';
+    }
+
+    function showLoginForm() {
+        document.getElementById('register-container').style.display = 'none';
+        document.getElementById('login-container').style.display = 'block';
+    }
+
+
+    const loginForm = document.querySelector('#login-container form');
+    const loginLoader = document.querySelector('#login-container .loader__balls');
+
+    const registerForm = document.querySelector('#register-container form');
+    const registerLoader = document.querySelector('#register-container .loader__balls');
+
+    function showLoader(e) {
+        e.preventDefault();
+        const formContainer = e.target.closest('.wrapper');
+        const loader = formContainer.querySelector('.loader__balls');
+        const button = e.target.querySelector('button');
+        button.disabled = true;
+        loader.style.display = 'flex';
+        setTimeout(() => {
+            e.target.submit();
+        }, 200000);
+    }
+
+    loginForm.addEventListener('submit', showLoader);
+    registerForm.addEventListener('submit', showLoader);
+
+</script>
 </body>
 </html>
